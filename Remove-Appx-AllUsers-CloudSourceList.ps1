@@ -71,7 +71,7 @@ Begin {
                 Write-Host "$($BlackListedApp) found. Attempting removal ... " -NoNewline
                 Write-LogEntry -Value "$($BlackListedApp) found. Attempting removal ... "
     
-                # Attempt removeal
+                # Attempt removal
                 $RemoveAppx = Remove-AppxProvisionedPackage -PackageName $AppProvisioningPackageName -Online -AllUsers
                     
                 #Re-check existence
@@ -96,7 +96,7 @@ Begin {
 
     # Black List of Appx Provisioned Packages to Remove for All Users
     $BlackListedAppsURL = $null
-    $BlackListedAppsURL = "https://raw.githubusercontent.com/MSEndpointMgr/Windows/master/BuiltInApps/blacklist_w11.txt"
+    $BlackListedAppsURL = "https://github.com/shwinkwhite/Work/blob/main/BlacklistWin11.txt"
     Write-LogEntry -Value "BlackListedAppsURL:$($BlackListedAppsURL)"
 
     #Attempt to obtain list of BlackListedApps
