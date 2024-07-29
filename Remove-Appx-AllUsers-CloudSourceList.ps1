@@ -96,7 +96,7 @@ Begin {
 
     # Black List of Appx Provisioned Packages to Remove for All Users
     $BlackListedAppsURL = $null
-    $BlackListedAppsURL = "https://github.com/shwinkwhite/Work/blob/main/BlacklistWin11.txt"
+    $BlackListedAppsURL = "https://raw.githubusercontent.com/shwinkwhite/Work/main/BlacklistWin11.txt"
     Write-LogEntry -Value "BlackListedAppsURL:$($BlackListedAppsURL)"
 
     #Attempt to obtain list of BlackListedApps
